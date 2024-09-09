@@ -8,17 +8,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Language Detection Model</h1>
+        <!-- <h1>Language Detection Model</h1> -->
         <form method="POST" action="/predict">
-            <label for="text">Enter text to detect language:</label><br>
+            <label for="text"  ><p class="txt">Enter text to detect language:</p></label><br>
             <input type="text" id="text" name="text" required><br>
             <button type="submit">Detect Language</button>
         </form>
 
         {% if prediction %}
         <div class="result">
-            <p>Detected Language: <strong>{{ prediction }}</strong></p>
-            <p>Entered Text: {{ text }}</p>
+            <p class="lang">Detected Language: <strong>{{ prediction }}</strong></p>
+            <p class="enteredtxt"><strong>Entered Text:</strong> {{ text }}</p>
         </div>
         {% endif %}
     </div>

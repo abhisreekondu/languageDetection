@@ -10,25 +10,36 @@ body {
     margin-top: 50px;
 }
 
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 input {
     width: 60%;
-    padding: 10px;
+    padding: 5px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    height:80px;
+    font-size: 23px;
 }
-
+.txt{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
 button {
     padding: 10px 20px;
-    background-color: #5cb85c;
+    background-color: #174e17;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: 50px;
+    font-size: 20px;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #4abe4a;
 }
 
 .result {
@@ -37,4 +48,12 @@ button:hover {
     background-color: #e0f7fa;
     border: 1px solid #009688;
     display: inline-block;
+}
+.lang{
+    font-size: 30px;
+}
+
+.enteredtxt{
+    font-size: 25px;
+
 }
