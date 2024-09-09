@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Detection Model</h1>
+        <form method="POST" action="/predict">
+            <label for="text">Enter text to detect language:</label><br>
+            <input type="text" id="text" name="text" required><br>
+            <button type="submit">Detect Language</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <p>Detected Language: <strong>{{ prediction }}</strong></p>
+            <p>Entered Text: {{ text }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
